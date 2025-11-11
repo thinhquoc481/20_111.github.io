@@ -84,7 +84,11 @@ const galaxyParameters = {
   outsideColor: new THREE.Color(0x48b8b8),
 };
 
-const defaultHeartImages = Array.from({ length: 2 }, (_, i) => `images/img${i + 1}.jpg`);
+const defaultHeartImages = [
+  "images/img1.jpg",
+  "images/img2.jpg",
+  "images/thay.webp"
+];
 
 const heartImages = [
   ...(window.dataCCD?.data?.heartImages || []),
@@ -819,8 +823,8 @@ let galaxyAudio = null;
 
 function preloadGalaxyAudio() {
   const audioSources = [
-    "AE THEM NHAC TUY NHA"
-  ];
+  "https://www.youtube.com/watch?v=_IWn_lo_42M"
+];
 
   const randomIndex = Math.floor(Math.random() * audioSources.length);
   const selectedSrc = audioSources[randomIndex];
