@@ -818,9 +818,9 @@ function animatePlanetSystem() {
 let galaxyAudio = null;
 
 function preloadGalaxyAudio() {
-  const audioSources = [
-    "AE THEM NHAC TUY NHA"
-  ];
+const audioSources = [
+  "https://www.youtube.com/watch?v=_IWn_lo_42M"
+];
 
   const randomIndex = Math.floor(Math.random() * audioSources.length);
   const selectedSrc = audioSources[randomIndex];
